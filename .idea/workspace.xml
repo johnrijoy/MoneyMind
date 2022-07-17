@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1daf286-c69d-447b-a9a3-2eab98be6a3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/slimshady/HelloWorld.java" afterDir="false" />
+    <list default="true" id="c1daf286-c69d-447b-a9a3-2eab98be6a3b" name="Changes" comment="added GeneralUI as frontend for application&#10;&#10;the frontend is now only on java output terminal">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +17,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -36,14 +38,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.GeneralUI">
+    <configuration name="GeneralUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.slimshady.frontend.GeneralUI" />
+      <module name="MoneyMind" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.slimshady.frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.slimshady.HelloWorld" />
       <module name="MoneyMind" />
@@ -59,6 +74,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GeneralUI" />
         <item itemvalue="Application.HelloWorld" />
       </list>
     </recent_temporary>
@@ -72,6 +88,91 @@
       <option name="presentableId" value="Default" />
       <updated>1657003414297</updated>
     </task>
+    <task id="LOCAL-00001" summary="added an Interface for model Expense&#10;&#10;no methods have configured to be inherited">
+      <created>1658034070750</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658034070750</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added an Interface for model Expense&#10;&#10;no methods have configured to be inherited">
+      <created>1658034258951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658034258951</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added an Interface for model Database&#10;&#10;the appendExpense, getExpenditure, updateExpense, removeExpense methods was added">
+      <created>1658034387341</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658034387341</updated>
+    </task>
+    <task id="LOCAL-00004" summary="InternalStorage class was implemented for database backend&#10;It uses ArrayList to store data.&#10;the appendExpense, getExpenditure, updateExpense, removeExpense methods was added.">
+      <created>1658034484561</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658034484561</updated>
+    </task>
+    <task id="LOCAL-00005" summary="GeneralExpense class was implemented as model for expense&#10;&#10;the model consists of id, amount, description, date along with constructors, getters and setters&#10;all other classes will use GeneralExpense as their default model for expense currently which needs to be updated in future">
+      <created>1658034759316</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658034759316</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added an IDatabase interface for Database Manipulation&#10;&#10;The interface consists of essential methods for any Database manipulation: CRUD expenses&#10;appendExpense, getExpenditure, updateExpenses and removeExpenses&#10;Currently uses GeneralExpense as expense model">
+      <created>1658034961136</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658034961136</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added InternalStorage class as Database Backend&#10;&#10;The class implements ArrayList for storing Expenses&#10;appendExpense, getExpenditure, updateExpenses and removeExpenses&#10;Currently uses GeneralExpense as expense model">
+      <created>1658035078576</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658035078576</updated>
+    </task>
+    <task id="LOCAL-00008" summary="created file FileHandler for Database backend &#10;&#10;The class is supposed to implement database using csv or similar files">
+      <created>1658035200069</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658035200069</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added ExpenseHandler class for services related to Expense Objects&#10;&#10;The service class will offer services to create GeneralExpense Objects&#10;Other services will be added">
+      <created>1658035332456</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658035332456</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added ExpenseDatabaseService class for service related to Database manipulation&#10;&#10;the service class will offer services to manipulate database">
+      <created>1658035443704</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658035443704</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added GeneralUI as frontend for application&#10;&#10;the frontend is now only on java output terminal">
+      <created>1658035505371</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658035505371</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added GeneralUI as frontend for application&#10;&#10;the frontend is now only on java output terminal">
+      <created>1658035513875</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658035513875</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,10 +180,39 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Developement" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added an Interface for model Expense&#10;&#10;no methods have configured to be inherited" />
+    <MESSAGE value="added an Interface for model Database&#10;&#10;the appendExpense, getExpenditure, updateExpense, removeExpense methods was added" />
+    <MESSAGE value="InternalStorage class was implemented for database backend&#10;&#10;It uses ArrayList to store data.&#10;the appendExpense, getExpenditure, updateExpense, removeExpense methods was added." />
+    <MESSAGE value="GeneralExpense class was implemented as model for expense&#10;&#10;the model consists of id, amount, description, date along with constructors, getters and setters&#10;all other classes will use GeneralExpense as their default model for expense currently which needs to be updated in future" />
+    <MESSAGE value="Added an IDatabase interface for Database Manipulation&#10;&#10;The interface consists of essential methods for any Database manipulation: CRUD expenses&#10;appendExpense, getExpenditure, updateExpenses and removeExpenses&#10;Currently uses GeneralExpense as expense model" />
+    <MESSAGE value="added InternalStorage class as Database Backend&#10;&#10;The class implements ArrayList for storing Expenses&#10;appendExpense, getExpenditure, updateExpenses and removeExpenses&#10;Currently uses GeneralExpense as expense model" />
+    <MESSAGE value="created file FileHandler for Database backend &#10;&#10;The class is supposed to implement database using csv or similar files" />
+    <MESSAGE value="added ExpenseHandler class for services related to Expense Objects&#10;&#10;The service class will offer services to create GeneralExpense Objects&#10;Other services will be added" />
+    <MESSAGE value="added ExpenseDatabaseService class for service related to Database manipulation&#10;&#10;the service class will offer services to manipulate database" />
+    <MESSAGE value="added GeneralUI as frontend for application&#10;&#10;the frontend is now only on java output terminal" />
+    <option name="LAST_COMMIT_MESSAGE" value="added GeneralUI as frontend for application&#10;&#10;the frontend is now only on java output terminal" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
